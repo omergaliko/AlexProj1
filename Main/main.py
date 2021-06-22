@@ -8,27 +8,14 @@ app = Flask(__name__)
 def homepage():
     website = '''
 <!DOCTYPE html>
-<html>
-<body>
-    <h1>Demo's of basic Python running on the web</h1>
-    <ul>
-        <li><a href="/tempConversion">Temp Conversion</a></li>
-    </ul>
-</body>
-</html>'''
-    return website
 
-@app.route('/tempConversion')
-def my_form():
-    website = '''
-<!DOCTYPE html>
 <html>
 <body>
     <h1>Temperature Convertor</h1>
-    <h2>(enter a value in Celsius, and it will be converted to Fahrenheit)</h2>
+    <h2>Enter a value in Celsius, and it will be converted to Fahrenheit</h2>
     <form action="tempConversion" method="POST">
         <input type="text" name="tempInCelsius">
-        <input type="submit" value="Convert">
+        <input type="submit" value="Convert to Fahrenheit">
     </form>
 </body>
 </html>'''

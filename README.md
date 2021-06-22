@@ -1,2 +1,3 @@
-# AlexProj1
-our first project with Alex Gorbach
+# Temperature Converter
+convert Celsius --> Fahrenheit
+
